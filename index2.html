@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Porukam</title>
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<link media="all" rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/smoothness/jquery-ui-1.9.2.custom.css">
+	<link media="all" rel="stylesheet" href="css/smoothness/jquery-ui-1.9.2.custom.min.css">
+	<link media="all" rel="stylesheet" href="css/select2.css">
+	<link media="all" rel="stylesheet" href="css/select2-bootstrap.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div id="header-top">
+			<div class="row content1">
+				<div class="mobile col-xs-1">
+					<i id="open" class="fa fa-th-list fa-2x" aria-hidden="true"></i>
+				</div>	
+				<div id="mob">
+					<i  id="close" class="fa fa-times-circle fa-1x" aria-hidden="true"></i>
+					<ul class="list-unstyled text-uppercase">
+						<li class="active"><a href="#">главная</a></li>
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">блог</a></li>	
+						<li><a href="#">цены</a></li>	
+					</ul>
+				</div>
+				<div class="logo col-xs-8 col-sm-3 col-md-2 text-uppercase"><a href="#">Porukam</a></div>
+				<nav id="nav" class="col-md-offset-1 col-lg-offset-2 col-sm-7  col-md-8">
+					<ul class="list-unstyled list-inline text-uppercase">
+						<li class="active"><a href="#">главная</a></li>
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">блог</a></li>	
+						<li><a href="#">цены</a></li>	
+					</ul>
+				</nav>
+				<div class="col-md-offset-1  col-xs-offset-1 sign-out  col-lg-2 col-xs-2  col-md-2 col-sm-2">
+					<button type="button" class="btn btn-primary btn-lg"><i class="fa fa-unlock-alt fa-1x" aria-hidden="true"></i>выйти</button>
+				</div>
+			</div>           
+		</div>
+		<div class="content">
+			<div class="row">
+				<div id="sub-header1">
+					<div class="col-xs-7 col-sm-7 col-md-8 col-lg-8 navBox">
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li class="active"><a href="#create" aria-controls="create" role="tab" data-toggle="tab">Создание</a></li>
+					    <li><a href="#preview" aria-controls="preview" role="tab" data-toggle="tab">Предварительный просмотр</a></li>
+					    <li><a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">Редактирование</a></li>
+					  </ul>
+				 	</div>
+					<div class="account dropdown  col-xs-5 col-sm-3  col-md-2 col-lg-2">
+						 <a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-1x" aria-hidden="true"></i> Станислав <i class="fa fa-angle-down" aria-hidden="true"></i>
+						</a>
+						<ul class="dropdown-menu">
+							 <li><a href="#">Тариф: <span class="plan">Стандартный</span></a></li>
+							 <li><a href="#">Настройки</a></li>
+						 </ul>
+					</div>
+					<div class="col-sm-3 col-md-2 improve col-lg-2">
+						<a href="#">Улучшить аккаунт</a>
+					</div>
+				</div>
+			</div>
+			<div class="row col-xs-12  breadcrumbs">
+				<ul class="breadcr list-unstyled list-inline">
+					<li><a href="#" a href="#home" aria-controls="home" >Главная <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+					<li><a href="#" aria-controls="">Категория <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+					<li><span class="active" href="#" aria-controls="">Подкатегория</span></li>	
+				</ul>
+			</div>
+			<div class="main-tab">
+				<div class="row tab-box">
+				  <div class="tab-content col-xs-12">
+				    <div role="tabpanel" class="tab-pane active" id="create">
+				   	 <form class="form-horizontal">		
+						<div class="row">
+							<div class="h2 col-xs-12">Договор купли-продажи транспортного средства
+							</div>
+						</div>
+						<div class="row">
+							<div class=" col-xs-12 col-md-8 col-sm-11 ContDetails"><p>Договор купли-продажи транспортного средства необходимо распечатать в трех экземлярах (один - продавцу, второй-покупателю, третий - ГИБДД), а также подписать каждый экземпляр со стороны продавца и покупателя. Можете распечатать бланк или заполнить и софрмировать готовый договор.</p>
+							</div>
+						</div>
+						<div class="row">
+								 <div class="form-group">
+									  <label for="place" class="col-sm-3  col-md-3  col-lg-3 control-label">Место составления</label>
+									  <div class="col-sm-5">
+										   <input type="text" class="form-control" id="place" placeholder="Москва" onfocus="placeholder='';" onblur="placeholder='Москва';">
+									  </div>
+								 </div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								 <label for="date" class="col-sm-3 col-md-3  col-lg-3 control-label">Дата составления</label>
+								  <div class="col-sm-3 dateIcon">
+								 	 <input type="text" placeholder="30.10.2016" class="datepicker" readonly><i class="fa fa-calendar" aria-hidden="true" id="dateCalendar"></i>
+									</div>
+							 </div>
+						</div>
+						<div class="row">
+							<div class="h2 col-xs-12">Информация о владельце транспортного средства <small>Как в паспорте</small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+							  <label for="name" class="col-sm-3 col-md-3  col-lg-3 control-label">Ф.И.О.</label>
+							  <div class="col-sm-5">
+								  <input type="text" class="form-control" id="name" placeholder="Пример: Порукамов Михаил Грегориевич"
+							    onfocus="placeholder='';" onblur="placeholder='Пример: Порукамов Михаил Грегориевич';">
+						 		 </div>
+							 </div>
+						</div>
+						<div class="row">
+							<div class=" passport ">
+								 <div class="form-group">
+									  <label for="passport" class="col-sm-3 col-md-3  col-lg-3  control-label">Паспорт</label>
+									  <div class=" pass1 col-sm-6 col-md-2 col-xs-12 dateIcon1">
+										   <input type="text" placeholder="Не указана" class="datepicker2" readonly><i class="fa fa-calendar" aria-hidden="true" id="dateCalendar2"></i>
+									  </div>
+									  <div class="pass2 col-sm-offset-3 col-sm-5 col-md-offset-0 col-md-2 col-xs-12">
+										   <input type="text" class="form-control" id="passport" placeholder="Серия" onfocus="placeholder='';" onblur="placeholder='Серия';">
+									  </div>
+									  <div class=" pass3 col-sm-offset-3 col-md-offset-0 col-sm-5 col-md-2 col-xs-12">
+										   <input type="text" class="form-control" id="passport" placeholder="Номер"  onfocus="placeholder='';" onblur="placeholder='Номер';">
+									  </div>
+								 </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+									   <div class="col-sm-offset-3 col-sm-5">
+										   <textarea rows="3" cols="68" name="text" placeholder="Выдан"  onfocus="placeholder='';" onblur="placeholder='Выдан';"></textarea>
+									  </div>
+							 	</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+							 	 	<label for="passport" class="col-sm-3 control-label">Адрес постоянной регистрации</label>
+									   <div class=" col-sm-5">
+										   <textarea  rows="3" cols="68" name="text" placeholder="Пример: 142203, РФ, Московская область, г. Серпухов, улица Ракова, дом 5, кв. 179." onfocus="placeholder='';" onblur="placeholder='Пример: 142203, РФ, Московская область, г. Серпухов, улица Ракова, дом 5, кв. 179.';" data-toggle="tooltip" data-placement="right" title="Пишите как указано в паспорте, страница 5, а для тех, у кого много &quot;прописок&quot;- 6 и далее"></textarea>
+									  </div>
+							 	</div>
+						</div>
+						<div class="row">
+							<div class="h2 col-xs-12">Информация о покупателе транспортного средства
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="name" class="col-sm-3 col-md-3  col-lg-3 control-label">Ф.И.О.</label>
+								 <div class="col-sm-5">
+									   <input type="text" class="form-control" id="name" placeholder="Пример: Порукамов Михаил Грегориевич"
+										    onfocus="placeholder='';" onblur="placeholder='Пример: Порукамов Михаил Грегориевич';">
+								 </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class=" passport">
+								 <div class="form-group">
+									  <label for="passport" class="col-sm-3 col-md-3  col-lg-3  control-label">Паспорт</label>
+									  <div class="pass1 col-sm-6 col-md-2 col-xs-12 dateIcon1">
+										   <input type="text" placeholder="Не указана" class="datepicker4" readonly><i class="fa fa-calendar" aria-hidden="true" id="dateCalendar4"></i>
+									  </div>
+									  <div class="pass2 col-sm-offset-3 col-sm-5 col-md-offset-0 col-md-2 col-xs-12">
+										   <input type="text" class="form-control" id="passport" placeholder="Серия" onfocus="placeholder='';" onblur="placeholder='Серия';">
+									  </div>
+								  	<div class=" pass3 col-sm-offset-3 col-md-offset-0 col-sm-5 col-md-2 col-xs-12">
+										   <input type="text" class="form-control" id="passport" placeholder="Номер"  onfocus="placeholder='';" onblur="placeholder='Номер';">
+									  </div>
+								 </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-5">
+									<textarea rows="3" cols="68"  name="text" placeholder="Выдан"  onfocus="placeholder='';" onblur="placeholder='Выдан';"></textarea>
+									  </div>
+							</div>
+						</div>
+						<div class="row">
+						 	<div class="form-group">
+							  	<label class="col-sm-3 control-label">Адрес постоянной регистрации</label>
+								<div class="col-sm-5">
+									 <textarea  rows="3" cols="68" name="text" placeholder="Пример: 142203, РФ, Московская область, г. Серпухов, улица Ракова, дом 5, кв. 179." onfocus="placeholder='';" onblur="placeholder='Пример: 142203, РФ, Московская область, г. Серпухов, улица Ракова, дом 5, кв. 179.';" data-toggle="tooltip" data-placement="right" title="Пишите как указано в паспорте, страница 5, а для тех, у кого много &quot;прописок&quot;- 6 и далее"></textarea>
+								</div>
+							</div>						
+						</div>
+						<div class="row">
+							<div class="h2 col-xs-12">Информация о транспортном средстве<small>Как в паспорте транспортного средства (ПТС)<i class="fa fa-info-circle" aria-hidden="true"></i></small>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								 <label class="col-sm-3 col-md-3  col-lg-3  control-label">Марка и модель</label>
+								 <div class="col-sm-5">
+									<input type="text" class="form-control" placeholder="BMW"onfocus="placeholder='';" onblur="placeholder='BMW';">
+								 </div>
+							</div>
+						</div>
+						<div class="row">
+							 <div class="form-group">
+									  <label for="birthdate" class="col-sm-3 col-md-3  col-lg-3 control-label">Vin</label>
+									  <div class="col-sm-3">
+										   <input type="text" class="form-control" id="birthdate" placeholder="123456789" onfocus="placeholder='';" onblur="placeholder='123456789';">
+									  </div>
+								 </div>
+						</div>
+						<div class="row">
+							 <div class="form-group">
+								  <label for="name" class="col-sm-3 col-md-3  col-lg-3 control-label">Номер кузова</label>
+								  <div class="col-sm-5">
+									   <input type="text" class="form-control" id="name" placeholder="Не указан" onfocus="placeholder='';" onblur="placeholder='Не указан';">
+								  </div>
+							 </div>
+						</div>
+						<div class="row">
+						 	<div class="form-group">
+								  <label for="birthdate" class="col-sm-3 col-md-3  col-lg-3 control-label">Тип ТС</label>
+								  <div class="col-sm-5">
+									   <input type="text" class="form-control" id="birthdate" placeholder="Легковой" onfocus="placeholder='';" onblur="placeholder='Легковой';">
+								  </div>
+						 	</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="yearSelect" class="col-xs-12 col-sm-3 col-md-3  col-lg-3 ">Год выпуска </label>
+								 <div id="yearSelect" class="col-sm-4 col-md-3  col-lg-3">
+									 <select class="js-example-basic-single" id="yearSelection">
+									 	<option></option>
+									 	  <option value="freePlan">Бесплатный тариф</option>
+										  <option value="commercialPlan">Платный тариф</option>
+										  <option value="specialPlan">Спец тариф для фрилансеров</option>
+										</select>
+								</div>
+							</div>
+						</div>
+						<div class="row colorslist">
+							<label class="col-sm-3 col-md-3 c1 col-lg-3 control-label">Цвет </label>
+							<div class="colorsChoice col-xs-12 col-sm-5 col-md-4 col-lg-4 ">
+								<div class="checkbox-white boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-white" value="Белый" /><label data-toggle="tooltip" data-placement="top" title="Белый" for="checkbox-white"></label>
+								</div>
+								<div class="checkbox-silver boxhold"><input  class="checkboxColor" type="checkbox" id="checkbox-silver" value="Серебристый" /><label for="checkbox-silver" data-toggle="tooltip" data-placement="top" title="Серебристый" ></label>
+								</div>
+								<div class="checkbox-yellow boxhold"><input  class="checkboxColor" type="checkbox" id="checkbox-yellow" value="Желтый" /><label for="checkbox-yellow" data-toggle="tooltip" data-placement="top" title="Желтый" ></label>
+								</div>
+								<div class="checkbox-orange boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-orange" value="Оранжевый" /><label for="checkbox-orange" data-toggle="tooltip" data-placement="top" title="Оранжевый" ></label>
+								</div>
+								<div class="checkbox-peach boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-peach" value="Коралловый" /><label for="checkbox-peach" data-toggle="tooltip" data-placement="top" title="Коралловый" ></label>
+								</div>
+								<div class="checkbox-pink boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-pink" value="Розовый" /><label for="checkbox-pink" data-toggle="tooltip" data-placement="top" title="Розовый" ></label>
+								</div>
+								<div class="checkbox-red boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-red" value="Красный" /><label for="checkbox-red" data-toggle="tooltip" data-placement="top" title="Красный" ></label>
+								</div>
+								<div class="checkbox-crismon boxhold"><input type="checkbox" id="checkbox-crismon" value="Бордовый" /><label for="checkbox-crismon" data-toggle="tooltip" data-placement="top" title="Бордовый" ></label>
+								</div>
+								<div class="checkbox-brown boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-brown" value="Коричневый" /><label for="checkbox-brown" data-toggle="tooltip" data-placement="top" title="Коричневый" ></label>
+								</div>
+								<div class="checkbox-blue boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-blue" value="Голубой" /><label for="checkbox-blue" data-toggle="tooltip" data-placement="top" title="Голубой" ></label>
+								</div>
+								<div class="checkbox-nblue boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-nblue" value="Синий"/><label for="checkbox-nblue" data-toggle="tooltip" data-placement="top" title="Синий" ></label>
+								</div>
+								<div class="checkbox-lavender boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-lavender" value="Сереневый" /><label for="checkbox-lavender" data-toggle="tooltip" data-placement="top" title="Сереневый" ></label>
+								</div>
+								<div class="checkbox-dgreen boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-dgreen" value="Зеленый" /><label for="checkbox-dgreen" data-toggle="tooltip" data-placement="top" title="Зеленый" ></label>
+								</div>
+								<div class="checkbox-lgreen boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-lgreen" value="Светло-зеленый" /><label for="checkbox-lgreen" data-toggle="tooltip" data-placement="top" title="Светло-зеленый"></label>
+								</div>
+								<div class="checkbox-grey boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-grey" value="Серый" /><label for="checkbox-grey" data-toggle="tooltip" data-placement="top" title="Серый" ></label>
+								</div>
+								<div class="checkbox-black boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-black" value="Черный" /><label for="checkbox-black" data-toggle="tooltip" data-placement="top"  title="Черный"></label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<div class="col-sm-2 col-sm-offset-3 textbox">
+									<textarea disabled id="name" type="text" value=""></textarea> 
+								</div>
+							 </div>
+						</div>
+						<div class="row PowerEnergy">
+							<div class="form-group">
+								  <label for="name" class="col-sm-3 col-md-3  col-lg-3 control-label">Мощность и объем</label>
+								  <div class="col-sm-2 col-xs-10">
+									   <input type="text" class=" col-xs-10 col-md-3  col-lg-3 form-control" id="name" placeholder="Мощность" onfocus="placeholder='';" onblur="placeholder='Мощность';">
+								  </div>
+								  <div class="MesUnit col-xs-2 col-sm-1"><p>л.с.</p></div>
+								  <div class=" col-xs-10 col-sm-2">
+									   <input type="text" class="form-control" id="name" placeholder="Объем" onfocus="placeholder='';" onblur="placeholder='Объем';">
+								  </div>
+								  <div class="MesUnit col-xs-2 col-sm-1"><p>см3</p></div>
+							 </div>
+						</div>
+						<div class="row">
+							<div class=" passport">
+								 <div class="form-group">
+									  <label for="passport" class="col-sm-3 col-md-3  col-lg-3  control-label">Паспорт ТС(ПТС) <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+									  <div class="pass1 col-sm-6 col-md-2 col-xs-12 dateIcon1">
+										   <input type="text" placeholder="Не указана" class="datepicker5" readonly><i class="fa fa-calendar" aria-hidden="true" id="dateCalendar5"></i>
+									  </div>
+									  <div class="pass2 col-sm-offset-3 col-sm-5 col-md-offset-0 col-md-2 col-xs-12 ">
+										   <input type="text" class="form-control" id="passport" placeholder="Серия" onfocus="placeholder='';" onblur="placeholder='Серия';">
+									  </div>
+									  <div class="pass3 col-sm-offset-3 col-md-offset-0 col-sm-5 col-md-2 col-xs-12 ">
+										   <input type="text" class="form-control" id="passport" placeholder="Номер"  onfocus="placeholder='';" onblur="placeholder='Номер';">
+									  </div>
+								 </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+							   <div class="col-sm-offset-3 col-sm-5">
+								   <textarea rows="3" cols="68" name="text" placeholder="Выдан"  onfocus="placeholder='';" onblur="placeholder='Выдан';"></textarea>
+							  </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class=" passport">
+								 <div class="form-group">
+									  <label for="passport" class="col-sm-3 col-md-3  col-lg-3  control-label">Свидетельство о регистрации (СТС) <i class="fa fa-info-circle" aria-hidden="true"></i></label>
+									  <div class="pass1 col-sm-6 col-md-2 col-xs-12 dateIcon1">
+										   <input type="text" placeholder="Не указана" class="datepicker6" readonly><i class="fa fa-calendar" aria-hidden="true" id="dateCalendar6"></i>
+									  </div>
+									  <div class="pass2 col-sm-offset-3 col-sm-5 col-md-offset-0 col-md-2 col-xs-12">
+										   <input type="text" class="form-control" id="passport" placeholder="Серия" onfocus="placeholder='';" onblur="placeholder='Серия';">
+									  </div>
+									  <div class="pass3 col-sm-offset-3 col-md-offset-0 col-sm-5 col-md-2 col-xs-12">
+										   <input type="text" class="form-control" id="passport" placeholder="Номер"  onfocus="placeholder='';" onblur="placeholder='Номер';">
+									  </div>
+								 </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-5">
+									<textarea rows="3" cols="68" name="text" placeholder="Выдан"  onfocus="placeholder='';" onblur="placeholder='Выдан';"></textarea>
+									  </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								  <label for="name" class="col-xs-8 col-sm-3 col-md-3  col-lg-3  control-label">Пробег</label>
+								  <div class=" col-xs-10 col-sm-2">
+									   <input type="text" class="form-control" id="name" placeholder="00000000" onfocus="placeholder='';" onblur="placeholder='00000000';">
+								  </div>
+								  <div class="MesUnit  col-xs-2 col-sm-1"><p>км</p></div>
+							 </div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								  <label for="name" class="col-sm-3 col-md-3  col-lg-3 control-label">Госномер</label>
+								  <div class="col-sm-2">
+									   <input type="text" class="form-control" id="name" placeholder="А00А000" onfocus="placeholder='';" onblur="placeholder='А00А000';">
+								  </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+									  <label for="name" class="col-xs-12 col-sm-3 col-md-3  col-lg-3 control-label">Стоимость</label> 
+									  <div class="col-xs-10 col-sm-2">
+										   <input type="text" class="form-control" id="name" >
+									  </div>
+									  <div class="MesUnit col-xs-2 col-sm-1"><p>рублей</p></div>
+								 </div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-8 col-sm-11 ContDetails"><p>Договор купли-продажи транспортного средства необходимо распечатать в трех экземлярах (один - продавцу, второй-покупателю, третий - ГИБДД), а также подписать каждый экземпляр со стороны продавца и покупателя. Можете распечатать бланк или заполнить и софрмировать готовый договор.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<div id="final" class="  col-sm-12">
+									<div class="success col-xs-10 col-sm-4 col-md-4"><a href="#" role="button" >Перейти к подписанию</a>
+									</div>
+									<div class="printOut col-xs-10 col-sm-4 col-md-3">
+									<a href="#" role="button" class="printOut">Распечатать Договор</a>
+									</div>
+									<div class="download col-xs-2 col-sm-1 col-md-1"><a href="#" role="button" ><i class="fa fa-download" aria-hidden="true"></i></a>
+									</div>
+									<div class="sendE col-md-1 col-xs-2 col-sm-1"><a href="#" role="button" ><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</form>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="preview"></div>
+					<div role="tabpanel" class="tab-pane" id="edit"></div>
+				 </div>
+			   </div>
+			</div>
+			<div class="fDown"></div>
+		</div>
+		<div id="footer">
+			<div class="row">
+				<div class="footer-box">
+					<ul class="col-md-12  list-unstyled list-inline text-uppercase">
+							<li><a href="#">Поддержка</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/jquery-ui-1.9.2.custom.js" type="text/javascript"></script> 
+	<script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script> 
+	<script src="js/jquery-control.js"></script>
+	<script src="js/select2.js"></script>
+	
+    <script>
+$(function(){
+  var hash = window.location.hash;
+  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+  $('.nav-tabs a').click(function (e) {
+    $(this).tab('show');
+    var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+    window.location.hash = this.hash;
+    $('html,body').scrollTop(scrollmem);
+  });
+});
+
+</script>
+
+<script>
+
+$('input[type="checkbox"]').click(function(){
+    var t = [];
+   
+	$('input[type=checkbox]').on('change', function (e) {
+	    if ($('input[type=checkbox]:checked').length > 1) {
+
+	        $(this).prop('checked', false);
+	        
+	        alert("Выберите только 1 значение.");
+	    }
+	    else{
+			$('input[type=checkbox]:checked').each(function(){
+			        t.push($(this).val());
+		    });
+			    
+		    $('textarea[id="name"]').val(t.join(', '));	    	
+	    }
+	});
+
+    
+});
+</script>
+<script type="text/javascript">
+  $('select').select2();
+</script>
+<script>
+	
+	$( "#dropdown" ).select2({
+    theme: "bootstrap"
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".js-example-basic-single").select2();
+});
+</script>
+<script>
+$(document).ready(function () {
+    $("#yearSelection").select2({
+        placeholder: "Год Выпуска...",
+        allowClear: true
+    });
+});
+ 
+</script>
+</body>
+</html>
