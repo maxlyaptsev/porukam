@@ -915,7 +915,17 @@ color:#fff!important;}
     border-spacing: 50px 0px;
     margin-bottom:70px!important;
     }
+  
 .contractsBox{margin:0;padding:0; display: table-row!important;}
+.buttonBox1, .buttonBox2{background-color: #fff!important;
+  box-shadow: 0px 0px 50px rgba(204,204,204,1);
+  width:25px;
+  height:250px;
+  padding:40px 20px!important;}
+.buttonBox1{margin-left:40px!important; margin-bottom:40px; }
+.buttonBox2{margin-right:10px!important }
+.signButton{padding-bottom:50px;}
+.name2{font-family: 'Roboto-Bold'; text-transform: uppercase; font-size:14px;color:#888a8e!important;text-align:center;}
 .contractsBox li{
   display:table-cell!important;
   background-color: #fff!important;
@@ -923,7 +933,6 @@ color:#fff!important;}
   width:27%!important;
   padding:40px 20px!important;
 }
-
 .contractsBox .manageOS{margin-right:0px!important;}
 .pContracts .mainTitle{color:#283143!important;}
 .cTitle{
@@ -938,12 +947,12 @@ color:#fff!important;}
 @media only screen and (max-width: 1024px){
   .contractsBox li{margin-right:40px;}
  .cTitle{height:90px!important; padding-bottom:20px!important;}
- .contractsWrap{ border-spacing: 20px 0px!important;}
+ .contractsWrap, .buttonWrap{ border-spacing: 20px 0px!important;}
 }
 
 .ready{font-family:'Cuprum-Bold'!important;font-size:48px!important; color:#ba8747!important;text-align: center}
 .sign1{font-family:'Cuprum-Bold'!important;font-size:48px!important; color:#283143!important;text-align: center; padding-bottom:40px;}
-.contractsBox span{display:block; color:#868686!important; font-size: 14px!important; font-family:'Roboto-Regular'!important}
+.contractsBox span, .buttonBox span{display:block; color:#868686!important; font-size: 14px!important; font-family:'Roboto-Regular'!important}
 .deal{width:100%; 
   padding:10px 0!important;
   background-color:#283143!important;
@@ -954,7 +963,7 @@ color:#fff!important;}
   border:2px solid#283143!important;
 }
 .deal:hover{color:#283143!important; border:2px solid#283143!important;}
-.deal1{width:100%; 
+.deal1, .addSignature{width:100%; 
   padding:10px 0!important;
   background-color:#fff!important;
   color:#283143!important;
@@ -1077,3 +1086,94 @@ box-shadow: none!important;
  }
  .moreNews:hover{color:#ba8747!important;
   border:2px solid #ba8747!important}
+  .formSheet{
+    background-color:#fff!important;
+    margin: 0!important; 
+    outline:0!important;
+    padding:0 15px!important;
+    font-family:'Roboto-Regular'!important;}
+  .formSheet .firstRow{margin-bottom:0!important;}
+  .formSheet .form-control{
+    border:0!important;
+    padding:2px 2px 0px 5px!important;
+    border-bottom:1px solid #a6a6a6!important; 
+    border-radius:0!important;
+    box-shadow: 0; 
+    outline:0!important;
+ -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .0);
+          box-shadow: inset 0 0px 0px rgba(0, 0, 0, .0);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  line-height:15px!important;
+  height:20px!important;
+  }
+  .formSheet .h2{text-align:center!important;}
+  .formSheet .form-control {}
+  .formSheet input[type="text"]{margin-bottom:10px!important;}
+.formSheet .form-control:focus {
+  border-color: none!important;
+  outline: 0;
+  -webkit-box-shadow: none!important;
+          box-shadow: none!important;
+}
+#r1c1{width:25px;}
+.record{color:#a6a6a6!important;display: inline-block!important;margin: 0!important}
+#r1c2{width:80px;}
+#r1c3{width:25px;}
+#r1c4{width:110px;float: none}
+#r2c2{float: right;}
+.r2c{text-align: center;}
+#r3c1, #r7c1, #r9c1, #r10c1,#r11c1, #r13c1, #r14c1{width:100%!important;}
+#r4c1, #r15c1, #r16c1,  #r17c1,  #r18c1,  #r19c1,  #r20c1{width:100%!important;}
+#r21c1, #r22c1,  #r23c1,  #r24c1,  #r25c1,  #r26c1{width:100%!important;}
+#r27c1, #r28c1, #r29c1,  #r30c1,  #r31c1, #r24ac1{width:100%!important;}
+#r5c1{width:100%!important;}
+.r5c{padding-left:0!important;}
+.row5{padding-right:0!important;}
+#r6c1, #r12c1, #r24c1{width:100px;margin:0 5px 10px 0px!important;}
+#r6c2, #r12c2, #r24c2{width:100px;margin:0 5px 10px 5px!important;}
+#r6c3, #r12c3, #r27c3{width:30px;margin:0 5px 10px 5px!important;}
+#r6c4, #r12c4, #r27c4{width:75px;}
+#r6c5, #r12c5, #r27c5, #r33c5{width:45px;margin:0 5px 10px 5px!important;}
+#r33c4{width:500px;}
+.rowp{margin-bottom:30px!important;}
+.seller, .buyer{
+  background: #fff!important;
+  text-transform: uppercase;
+  color:#283143!important; 
+  font-size:18px!important;
+font-family: 'Roboto-BoldCondensed'!important;
+margin: auto;
+width: 100%;
+padding:30px 0 40px 0!important;
+}
+.signButton{text-align: center}
+#r30c1{width:150px;}
+#sellerSign{width:770px;margin: 30px auto;}
+.modal-content{background:#f5f5f5!important; text-align:center;}
+.modal-title{font-family: 'Roboto-BoldCondensed'!important;color:#283143!important; font-size:24px!important;text-transform: uppercase}
+.modal-header h4{text-align: center;}
+.modal-body input[type="text"]{
+  border:0!important;
+  height:50px!important;
+color:#282828 !important;
+font-family: 'Roboto-BoldCondensed'!important;
+  text-transform: uppercase;
+  padding:20px !important; 
+width:217px!important;}
+.modal-body .form-group input::-moz-placeholder{
+  color:#282828 !important;
+  text-transform: uppercase;
+  opacity: 1!important;
+}
+@media (min-width: 768px){
+.modal-dialog {
+    width: 770px!important;
+    margin: 30px auto;
+}
+}
+.modalName{margin-bottom:25px;}
+.reset{width:160px!important;margin:30px 0;font-family: 'Cuprum-Bold';}
+.submitSign{width:160px!important;background-color:#ba8747!important; color:#fff!important;float:right!important; margin:30px 0;font-family: 'Cuprum-Bold';}
+.modalFile img{width:100%;}
