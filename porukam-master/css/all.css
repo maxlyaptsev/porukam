@@ -342,7 +342,7 @@ text-transform: lowercase!important;
 .improve a{border-left: 1px solid #d6d6d6!important;    padding-left: 20px!important;}
 .account a{padding-right:0!important;}
 .account a[type="button"]{border-right:0!important;}
-.breadcr{padding-left:10px!important;}
+.breadcrumbs-table{padding-left:10px!important;}
 }
 @media only screen and (max-width: 768px){
    .dropdown-menu{left: -50px !important;}
@@ -414,8 +414,8 @@ z-index: 50!important;
   margin-bottom: 20px !important;
   }
   .navBox{padding-left:0!important;}
-  .ContDetails{padding-bottom:3%!important;padding-left:0!important;}
-  .ContDetails p{font-family: 'Roboto-Regular';color:#868686!important;line-height: 25px!important;display: block!important; font-size: 14px!important;}
+  .contract-details{padding-bottom:3%!important;padding-left:0!important;}
+  .contract-details p{font-family: 'Roboto-Regular';color:#868686!important;line-height: 25px!important;display: block!important; font-size: 14px!important;}
   .form-horizontal{margin:0 15px !important;}
 .form-horizontal label{
   font-family:'Cuprum-Bold'!important; 
@@ -476,8 +476,8 @@ font-family: 'Roboto-Regular'!important;}
 .form-group textarea::-moz-placeholder{
  color:#868686!important;
 opacity:1!important;}
-.passport .col-sm-2{margin-right:15px!important;}
-.passport label{margin-right:0 !important}
+.car-registration-license .col-sm-2, .passport .col-sm-2{margin-right:15px!important;}
+.car-registration-license label, .passport label{margin-right:0 !important}
 .colors{background: none;position: relative; padding-bottom:10px!important;}
 .colors li{position: relative;padding:0 2px !important;}
 .colors a{
@@ -507,7 +507,7 @@ opacity:1!important;}
   .dateIcon i, .dateIcon1 i{padding: 0 !important}
 .form-group{margin-bottom:10px !important;}
 
-.MesUnit p{
+.metric-unit p{
   color:#868686!important;
   display: block!important;
   padding:20%!important;
@@ -517,12 +517,12 @@ opacity:1!important;}
 .chevron{color:#cccccc!important;}
 
   @media only screen and (max-width: 767px){
-  .MesUnit p{padding:15% !important; display: inline-block!important}
+  .metric-unit p{padding:15% !important; display: inline-block!important}
   .account{ padding:1% 0!important;}
   }
-   #final .success{margin-right: 3%!important; padding-left:0!important;}
+   #final .sign-button{margin-right: 3%!important; padding-left:0!important;}
   #final .printOut {margin-right: 5%!important}
-  #final .success a{
+  #final .sign-button a{
     margin-bottom:10px!important;
     display: block!important;
     padding:10px 5px!important;
@@ -539,19 +539,19 @@ opacity:1!important;}
   padding:10px 5px!important; 
   border-radius:3px!important; 
   color:#ba8747!important;}
-#final .download a{
+#final .download-button a{
   display: inline-block!important; 
   padding:10px 15px!important; 
   background: none!important;
   border:2px solid #bdbdbd!important;
   border-radius:3px!important;}
-#final .sendE a{display: inline-block!important;padding:10px 15px!important; background: none!important;border:2px solid #bdbdbd!important;border-radius:3px!important;}
-#final .download i{color:#bdbdbd!important;padding-right:0!important;}
-#final .sendE i{color:#bdbdbd!important;padding-right:0!important;}
+#final .send-button a{display: inline-block!important;padding:10px 15px!important; background: none!important;border:2px solid #bdbdbd!important;border-radius:3px!important;}
+#final .download-button i{color:#bdbdbd!important;padding-right:0!important;}
+#final .send-button i{color:#bdbdbd!important;padding-right:0!important;}
 @media only screen and (max-width: 1024px){
-   #final .success a{padding:10px 2px!important; font-size:16px!important;width: 100%!important;}
+   #final .sign-button a{padding:10px 2px!important; font-size:16px!important;width: 100%!important;}
    #final .printOut a{padding:10px 2px!important; font-size:16px!important;width: 100%!important}
-  #final .download {margin-right: 10px!important;}
+  #final .download-button{margin-right: 10px!important;}
 }
 
 .colorsChoice input[type="checkbox"]{
@@ -717,7 +717,7 @@ opacity:1!important;}
 .checkbox-brown, .checkbox-blue, .checkbox-nblue, .checkbox-lavender{float:left!important;padding-right:7px!important;}
 .checkbox-dgreen, .checkbox-lgreen, .checkbox-grey, .checkbox-black{float:left!important;padding-right:7px!important;}
 
-#name{height: 50px !important;background-color: #fff!important;}
+#color-title{height: 50px !important;background-color: #fff!important;}
 .main-box .pager li > a, .pager li > span {
     background-color: #fff!important;
     border: 1px solid #ddd!important;
@@ -919,7 +919,7 @@ color:#fff!important;}
 .contractsBox{margin:0;padding:0; display: table-row!important;}
 .buttonBox1, .buttonBox2{background-color: #fff!important;
   box-shadow: 0px 0px 50px rgba(204,204,204,1);
-  width:25px;
+  width:250px;
   height:250px;
   padding:40px 20px!important;}
 .buttonBox1{margin-left:40px!important; margin-bottom:40px; }
@@ -1177,3 +1177,50 @@ width:217px!important;}
 .reset{width:160px!important;margin:30px 0;font-family: 'Cuprum-Bold';}
 .submitSign{width:160px!important;background-color:#ba8747!important; color:#fff!important;float:right!important; margin:30px 0;font-family: 'Cuprum-Bold';}
 .modalFile img{width:100%;}
+.tarif-price{margin:70px 0 100px 0; border-collapse:collapse;}
+.tarif-price td, .tarif-price th{border:1px solid #dcdcdc!important;}
+.tarif-price tr{line-height:25px!important; height:50px!important;}
+.tarif-price .fa-info-circle{padding:0 10px!important; cursor: pointer}
+.price-title{
+  font-family: 'Roboto-BoldCondensed'!important;
+    font-size: 18px!important;
+    color: #283143!important;
+    text-transform: uppercase;padding-top:15px!important;}
+
+    
+    .paragraph-name{ font-family: 'Roboto-Regular'!important;
+    font-size:14px!important;
+    color:#868686!important;
+    text-transform: none!important;
+    
+  }
+ .tarif-price .price-title1{border:0!important; vertical-align: top!important;}
+ .tarif-price .fa-check-circle{color:#ffd554!important;}
+ .tarif-price .col-xs-2{text-align: center;}
+ .tarif-price .fa-times{color:#e3e3e3!important;}
+ .paragraph-height{height:75px!important;}
+ .top-row{height:160px!important;vertical-align: top!important}
+ .extended-block{background-color: #fff!important;border-left:0!important;}
+ .connect1{font-family: 'Cuprum-Bold'!important;
+    border-radius: 3px!important;
+    padding: 13px 10px!important;
+    text-transform: uppercase!important;
+    font-size: 16px!important;
+    color: #283143!important;
+    border: 2px solid #283143 !important;
+    margin-bottom:20px!important;
+
+}
+  .connect2{    font-family: 'Cuprum-Bold'!important;
+    border-radius: 3px!important;
+    padding: 13px 10px!important;
+    text-transform: uppercase!important;
+    font-size: 16px!important;
+    background-color: #283143!important;
+    color: #fff !important;
+    border: 2px solid #283143 !important;
+    margin-bottom:20px!important;;
+}
+.connect2:hover{color: #283143!important;}
+.connect{margin-top:35px!important;}
+#table1{border-collapse: collapse!important;}
