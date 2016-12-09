@@ -253,7 +253,7 @@
 								</div>
 								<div class="checkbox-pink boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-pink" value="Розовый" /><label for="checkbox-pink" data-toggle="tooltip" data-placement="top" title="Розовый" ></label>
 								</div>
-								<div class="checkbox-red boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-red" value="Красный" /><label for="checkbox-red" data-toggle="tooltip" data-placement="top" title="Красный" ></label>
+								<div class="checkbox-red boxhold"><input class="checkboxColor" type="checkbox" id="checkbox-red" value="Красный" /><label for="checkbox-red" data-toggle="tooltip" class="white" data-placement="top" title="Красный" ></label>
 								</div>
 								<div class="checkbox-crismon boxhold"><input type="checkbox" id="checkbox-crismon" value="Бордовый" /><label for="checkbox-crismon" data-toggle="tooltip" data-placement="top" title="Бордовый" ></label>
 								</div>
@@ -452,7 +452,7 @@ $('input[type="checkbox"]').click(function(){
 			        t.push($(this).val());
 		    });
 			    
-		    $('textarea[id="name"]').val(t.join(', '));	    	
+		    $('textarea[id="color-title"]').val(t.join(', '));	    	
 	    }
 	});
 
@@ -481,6 +481,13 @@ $(document).ready(function () {
     });
 });
  
+</script>
+<script>
+
+$(function () {
+ 
+  $('[data-toggle="tooltip"]').tooltip()
+})
 </script>
 </body>
 </html>

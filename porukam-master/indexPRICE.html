@@ -55,7 +55,7 @@
 							<td class="col-xs-2"><i class="fa fa-check-circle fa-2x" aria-hidden="true"></i></td>
 						</tr>
 						<tr>
-							<td class="col-xs-5 paragraph-name">Юридическая обязательная подпись<i class="fa fa-info-circle " aria-hidden="true"></i></td>
+							<td class="col-xs-5"><span class="paragraph-name" data-toggle="tooltip" data-placement="right" title="Пишите как указано в паспорте, страница 5, а для тех, у кого много &quot;прописок&quot;- 6 и далее">Юридическая обязательная подпись<i class="fa fa-info-circle " aria-hidden="true"></i></span></td>
 							<td class="col-xs-2"><i class="fa fa-check-circle fa-2x" aria-hidden="true"></i></td>
 							<td class="col-xs-2 extended-block"><i class="fa fa-check-circle fa-2x" aria-hidden="true"></i></td>
 							<td class="col-xs-2"><i class="fa fa-check-circle fa-2x" aria-hidden="true"></i></td>
@@ -188,7 +188,13 @@ $(function(){
 });
 
 </script>
+<script>
 
+$(function () {
+ 
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 
 </body>
 </html>
