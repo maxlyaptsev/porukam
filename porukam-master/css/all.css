@@ -107,6 +107,7 @@ body{height:100%!important;background: #f5f5f5!important; min-width: 320px!impor
 #nav li{padding: 47px 6%!important;}
 #nav li:first-child{padding-left:0!important;}
 #nav li a.active{border-top:2px solid #ba8747!important;}
+#nav li a:hover{}
 #nav a{padding:40px 0!important;}
 
 .btn {
@@ -344,6 +345,7 @@ text-transform: lowercase!important;
 .account a[type="button"]{border-right:0!important;}
 .breadcrumbs-table{padding-left:10px!important;}
 }
+.back-button{font-size: 30px!important}
 @media only screen and (max-width: 768px){
    .dropdown-menu{left: -50px !important;}
 .fDown{height:350px!important;}
@@ -553,7 +555,15 @@ opacity:1!important;}
    #final .printOut a{padding:10px 2px!important; font-size:16px!important;width: 100%!important}
   #final .download-button{margin-right: 10px!important;}
 }
-
+@media only screen and (max-width: 767px){
+   #final .sign-button a{padding:10px 2px!important; font-size:10px!important;width: 100%!important;}
+   #final .printOut a{padding:10px 2px!important; font-size:10px!important;width: 100%!important}
+  #final .download-button{margin-right: 10px!important; padding:0!important; padding-right:5px!important;}
+  #final .sign-button { padding:0!important; margin-right: 5px!important;}
+  #final .printOut { padding:0!important; margin-right: 5px!important;}
+  #create .h2{font-size:18px!important;}
+  .form-horizontal label{font-size: 16px!important}
+}
 .colorsChoice input[type="checkbox"]{
     position: absolute;
     left:-9999px;}
@@ -793,7 +803,8 @@ left: 33%!important;}
      .project-pag .pagination{left:10% !important;}
      .project-pag .pager{display: none!important}
      .project-pag li{margin:0!important;}
-}
+     
+  }
 
 .subtab>li.active>a, .subtab>li.active>a:focus, .subtab>li.active>a:hover {
     color: #e7bd88!important;}
@@ -834,10 +845,18 @@ padding-top:20px!important;
 display:inline-block!important;
 padding-right:10px!important;
 position: relative!important;
+vertical-align: top!important;
+line-height: 30px!important;
 }
-.breadcrumbs li a{color:#a9aaad!important;font-family: 'Roboto-Regular'!important;}
+.breadcrumbs li a{
+  color:#a9aaad!important;
+  font-family: 'Roboto-Regular'!important;
+vertical-align: center!important;
+line-height: 30px!important;
+vertical-align: top!important;}
+.breadcrumbs-table li a::after{content:"»";padding-left:5px; font-size: 14px}
 .breadcrumbs li i{padding-left:10px!important;}
-.breadcrumbs span.active{color:#ba8747!important;}
+.breadcrumbs-table .active{color:#ba8747!important; font-family: 'Roboto-Regular'!important;}
 .subtab{padding-left:0!important;}
 .tabBox{padding-left:0!important;}
 #yearSelect{}
@@ -925,7 +944,13 @@ color:#fff!important;}
 .buttonBox1{margin-left:40px!important; margin-bottom:40px; }
 .buttonBox2{margin-right:10px!important }
 .signButton{padding-bottom:50px;}
-.name2{font-family: 'Roboto-Bold'; text-transform: uppercase; font-size:14px;color:#888a8e!important;text-align:center;}
+.name2{ 
+  font-family: 'Roboto-BoldCondensed'!important; 
+  font-size: 18px!important;
+  color:#283143!important;
+  text-transform: uppercase!important;
+  text-align: center!important;
+  }
 .contractsBox li{
   display:table-cell!important;
   background-color: #fff!important;
@@ -1046,7 +1071,7 @@ box-shadow: none!important;
   margin:50px 0!important;
 }
 .ProgBox{float:none!important; margin:0 auto!important;text-align: center!important;}
-.buttonBox1{width:360px;margin: auto;}
+.buttonBox1{width:400px;margin: auto!important;}
 .buttonBox1:after {
     content: '';
     display: block;
@@ -1061,6 +1086,14 @@ box-shadow: none!important;
     .imageBox{display:none!important}
 }
 .blog .mainTitle{color:#283143!important;}
+
+@media only screen and (max-width:767px){
+    .mainTitle { font-size:24px!important;}
+    .buttonBox1{width:325px!important;}
+    .buttonBox1 button{width:142px!important;}
+    .buttonBox button{width:140px!important;}
+    .fullV{margin-left:50px!important;}
+}
 .blogWrap{float: none!important;
     margin: 0 auto!important;}
 .blogImage{padding-bottom:20px; display: block;}
@@ -1119,7 +1152,7 @@ box-shadow: none!important;
 }
 #r1c1{width:45px;}
 .record{color:#a6a6a6!important;display: inline-block!important;margin: 0!important}
-#r1c2{width:80px;}
+#r1c2{width:80px; display:inline-block;}
 #r1c3{width:75px;}
 #r1c4{width:110px;float: none}
 #r2c2{float: right;}
@@ -1128,6 +1161,8 @@ box-shadow: none!important;
 #r4c1, #r15c1, #r16c1,  #r17c1,  #r18c1,  #r19c1,  #r20c1{width:100%!important;}
 #r21c1, #r22c1,  #r23c1,  #r24c1,  #r25c1,  #r26c1{width:100%!important;}
 #r27c1, #r28c1, #r29c1,  #r30c1, #r24ac1{width:100%!important;}
+ #r30c1{margin-top:30px;}
+.buttonBox1 .record{margin-bottom:30px!important;}
 #r5c1{width:100%!important;}
 .r5c{padding-left:0!important;}
 .row5{padding-right:0!important;}
@@ -1136,19 +1171,25 @@ box-shadow: none!important;
 #r6c3, #r12c3, #r27c3{width:100px;margin:0 5px 10px 5px!important;}
 #r12c4{width:75px;}
 #r27c4{width:175px; padding-bottom:25px;}
-#r6c5, #r12c5, #r27c5, #r33c5{width:65px;margin:0 5px 10px 5px!important;}
+#r6c5, #r12c5, #r27c5{width:65px;margin:0 5px 10px 5px!important;}
+#r33c5{width:65px;}
 #r33c4{width:500px;}
 .rowp{margin-bottom:30px!important;}
 .issued3{padding-left:0!important;}
 .seller, .buyer{
-  background: #fff!important;
+  background: #ba8747!important;
   text-transform: uppercase;
-  color:#283143!important; 
-  font-size:18px!important;
-font-family: 'Roboto-BoldCondensed'!important;
+  color:#fff!important; 
+  font-size:16px!important;
+ font-family: 'Cuprum-Bold'!important;
 margin: auto;
 width: 100%;
-padding:30px 0 40px 0!important;
+padding:10px 0!important;
+}
+@media only screen and (max-width: 767px){
+          .seller, .buyer{font-size: 14px!important;}
+          .btn{white-space:normal!important;}
+          .back-button{font-size:18px!important;}
 }
 .signButton{text-align: center}
 #r30c1, #r31c1{width:150px; border-bottom:1px solid #ccc!important;}
@@ -1340,3 +1381,64 @@ width:217px!important;}
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control{background-color: #fff!important}
+
+
+@media only screen and (max-width: 470px){.introBox button {
+    font-size: 14px !important;
+      width: 120px !important;}
+}
+.main-introbox{width: 700px!important;margin: auto!important; margin-top: 50px!important;float:none!important;}
+.main-intro{ 
+  font-size: 18px!important;
+  font-family: 'Roboto-BoldCondensed';
+  text-transform: uppercase;
+   color:#283143 !important;
+   text-align: center;
+   line-height:30px!important;
+}
+.main-intro-line{width:200px!important;margin: auto; border-bottom: 1px solid #ba8747!important; padding:15px 0!important;}
+.mainContent2{width: 100%; max-width:1048px!important;margin: auto!important}
+.advantages{counter-reset: list 0!important;padding-top:30px!important;}
+.advantages li{padding-bottom:30px!important;}
+.advantages li:before{
+    counter-increment: list!important;
+content: counter(list) " "!important;
+    font-size: 34px!important;
+     font-family: 'Cuprum-Bold'!important;
+     color:#ba8747!important;
+     padding:0 15px!important;
+     margin-left: -30px!important
+  }
+
+  .advantages li{
+    font-family: 'Roboto-Regular';
+    color:#868686!important;
+    line-height: 25px!important;
+    display: block!important; 
+    font-size: 14px!important;
+    text-align:left!important;
+    text-indent: -20px!important}
+    .author-box{background:url('../images/author.jpg') repeat;
+    height: 531px!important;}
+    .about-author{width:600px!important;
+      float:left;}
+      .author-name{font-family:'Cuprum-Bold'!important; 
+  font-size:18px!important; 
+  color:#282828!important; 
+  text-transform: uppercase!important;padding-top: 100px!important}
+  .author-text{font-family: 'Roboto-Regular';
+  color:#868686!important;
+  line-height: 25px!important;
+  display: block!important; 
+  font-size: 14px!important;
+margin-bottom:0!important;}
+  .author-media li a{color:#ba8747!important;}
+  .author-media{padding:40px 0!important;}
+  .mainContent2 .mainTitle{color:#283143!important;}
+  .contact-info{
+  font-family:'Cuprum-Bold'!important; 
+  font-size:18px!important; 
+  color:#282828!important; 
+  text-transform: uppercase!important;}
+.contact-box{text-align: center!important}
+.contact-box i{color:#ba8747!important;padding-bottom: 20px!important}

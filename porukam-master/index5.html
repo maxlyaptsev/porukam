@@ -52,7 +52,7 @@
 					    <li><a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">Редактирование</a></li>
 					  </ul>
 				 	</div>
-					<div class="account dropdown  col-xs-5 col-sm-3  col-md-2 col-lg-2">
+					<div class="account dropdown col-xs-offset-1  col-xs-5 col-sm-3  col-md-2 col-lg-2">
 						 <a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-1x" aria-hidden="true"></i> Станислав <i class="fa fa-angle-down" aria-hidden="true"></i>
 						</a>
 						<ul class="dropdown-menu">
@@ -65,11 +65,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="row col-xs-12  breadcrumbs">
-				<ul class="breadcr list-unstyled list-inline">
-					<li><a a href="#home" aria-controls="home" >Главная <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-					<li><a href="#">Категория <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-					<li><span class="active" href="#" >Подкатегория</span></li>	
+				<div class="row col-xs-12  breadcrumbs">
+				<ul class="breadcrumbs-table list-unstyled list-inline">
+					<li class="back-button">&#10688;</li>
+					<li><a href="#" a href="#home" aria-controls="home" >Главная </a></li>
+					<li><a href="#" aria-controls="">Категория</a></li>
+					<li class="active">Подкатегория</li>	
 				</ul>
 			</div>
 			<div class="main-tab">
@@ -83,22 +84,22 @@
 							</div>
 								<div class="row">
 									<div class="form-group col-sm-12 firstRow">
-										<div class="col-sm-4 col-md-3 col-lg-3">
-											<span class="record">	 <input type="text" readonly placeholder="&#171; 28 &#187;" class="form-control" id="r1c1" maxlength="8"></span>
-											<input type="text" class="form-control " readonly placeholder="марта " id="r1c2" >
-											<span class="record">	<input type="text" readonly placeholder="2016 года"  class="form-control" id="r1c3" maxlength="2"></span>
+										<div class="col-xs-9 col-sm-6 col-md-4 col-lg-3">
+											<span class="record form-control" id="r1c1">&#171; 28 &#187;</span>
+											<span class="form-control " id="r1c2">марта</span>
+											<span class="record form-control" id="r1c3">2016 года</span>
 										  </div>
-										  <div class=" col-sm-offset-4  col-md-offset-7  col-lg-offset-7 col-sm-4 col-md-2 col-lg-2 r2c">
-											<input type="text" class="form-control" readonly placeholder="   г. Москва" id="r1c4">
+										  <div class=" col-xs-3 col-sm-offset-1  col-md-offset-6  col-lg-offset-7 col-sm-4 col-md-2 col-lg-2 r2c">
+											<span id="r1c4" class=" form-control">г. Москва</span>
 										  </div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-12 ">
-										<div class="col-sm-3 col-md-2 col-lg-2 r2c">
+										<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 r2c">
 											<p class="record">(дата)</p>
 										</div>
-										  <div class=" col-sm-offset-5  col-md-offset-7 col-lg-offset-7 col-sm-4 col-md-3 col-lg-3 ">
+										  <div class="col-xs-6 col-sm-offset-5  col-md-offset-7 col-lg-offset-7 col-sm-4 col-md-3 col-lg-3 ">
 											<p class="record" id="r2c2">(место составления)</p>
 										  </div>
 									</div>
@@ -106,38 +107,38 @@
 								<div class="row">
 									<div class="form-group col-sm-12 ">
 										<div class="col-sm-12">
-											<input type="text" class="form-control" readonly placeholder="   Иванов Иван Иванович"  id="r3c1" >
+											<p class="form-control" id="r3c1">Иванов Иван Иванович</p>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-12 ">
 										<div class="col-sm-12">
-											<input type="text" class="form-control" id="r4c1" >
+											<p class="form-control" id="r4c1"></p>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-12  col-md-12 col-lg-12">
 										<div class="col-sm-4 col-md-3 col-lg-3 row5">
-											<p class="record">	зарегистрированный (ая) по адресу</p>
+											<p class="record">зарегистрированный (ая) по адресу</p>
 										</div>
 										<div class="col-sm-8 col-md-9 col-lg-9 r5c">
-											<input type="text" class="form-control"  readonly placeholder="     РФ, г. Москва, ул. Туполева, дом 2, квартира 7" id="r5c1" >
+											<p class="form-control" id="r5c1"> РФ, г. Москва, ул. Туполева, дом 2, квартира 7</p>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-12 firstRow">
 										<div class="col-sm-12">
-											<span class="record">	Удостоверение личности: паспорт серии <input type="text" class="form-control" readonly placeholder="   5734" id="r6c1">№ <input type="text" class="form-control" readonly placeholder="   931043" id="r6c2" maxlength="10">, выдан <input type="text" class="form-control" readonly placeholder="   &#8220; 26 &#8221; марта " id="r6c3"><input type="text" readonly placeholder="2014 г.," class="form-control" id="r6c5"  maxlength="8"></span>
+											<span class="record">	Удостоверение личности: паспорт серии <span class="form-control"> 5734 </span> № <span class="form-control"> 931043 </span> выдан <span class="form-control"> &#8220; 26 &#8221; марта 2014 г., </span></span>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-12 ">
 										<div class="col-sm-12">
-											<input type="text" class="form-control" id="r7c1" readonly placeholder="    Выдан отделом УФМС Росссии по Московской области в Пресненском районе" >
+											<span class="form-control" id="r7c1"> Выдан отделом УФМС Росссии по Московской области в Пресненском районе" </span>
 										</div>
 									</div>
 								</div>
@@ -151,14 +152,14 @@
 								<div class="row">
 									<div class="form-group col-sm-12 ">
 										<div class="col-sm-12">
-											<input type="text" class="form-control" id="r9c1" readonly placeholder="     Петров Петр Петрович">
+											<p class="form-control" id="r9c1">   Петров Петр Петрович</p>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="form-group col-sm-12 ">
+									<div class="form-group col-sm-12">
 										<div class="col-sm-12">
-											<input type="text" class="form-control" readonly id="r10c1" >
+											<p class="form-control" readonly id="r10c1"></p>
 										</div>
 									</div>
 								</div>
@@ -168,21 +169,21 @@
 											<span class="record">	зарегистрированный (ая) по адресу</span>
 										</div>
 										<div class="col-sm-8 col-md-9 col-lg-9 r5c">
-											<input type="text" class="form-control" readonly placeholder="     РФ, Брянская обл., г. Гродно, ул. Лавочкина, дом 7, квартира 157" id="r11c1" >
+											<p class="form-control" id="r11c1"> РФ, Брянская обл., г. Гродно, ул. Лавочкина, дом 7, квартира 157 </p>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-12 firstRow">
 										<div class="col-sm-12">
-											<span class="record">	Удостоверение личности: паспорт серии <input type="text" class="form-control" id="r12c1" readonly placeholder="    7738">№ <input type="text" readonly placeholder="   232123" class="form-control" id="r12c2" maxlength="10">, выдан <input type="text" class="form-control" readonly placeholder="   &#8220; 25 &#8221; июня " id="r12c3"><input type="text" readonly placeholder="2010 г.," class="form-control" id="r6c5"  maxlength="8"></span>
+											<span class="record">	Удостоверение личности: паспорт серии <span class="form-control" id="r12c1"> 7738 </span> № <span class="form-control" id="r12c2">232123</span>, выдан <span class="form-control" id="r12c3">  &#8220; 25 &#8221; июня </span><span  class="form-control" id="r6c5">2010 г.,</span></span>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-12 ">
 										<div class="col-sm-12">
-											<input type="text" class="form-control" id="r13c1" readonly placeholder="   Выдан отделом УФМС Росссии по Калужской области в городе Мещовск">
+											<p class="form-control" id="r13c1">  Выдан отделом УФМС Росссии по Калужской области в городе Мещовск </p>
 										</div>
 									</div>
 								</div>
@@ -213,7 +214,7 @@
 											<p class="record">Марка, модель ТС:</p>
 										</div>
 										<div class="col-sm-8 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r14c1" readonly placeholder="     BMW 320i" >
+											<p class="form-control" id="r14c1">     BMW 320i </p>
 										</div>
 									</div>
 								</div>
@@ -223,7 +224,7 @@
 											<p class="record">Идентификационный номер (VIN):</p>
 										</div>
 										<div class="col-sm-8 col-md-9 col-lg-9 r5c">
-											<input type="text" class="form-control" id="r15c1" readonly placeholder="     WAUZZZ8DZWA123456">
+											<p class="form-control" id="r15c1">   WAUZZZ8DZWA123456 </p>
 										</div>
 									</div>
 								</div>
@@ -233,7 +234,7 @@
 											<p class="record">Тип ТС:</p>
 										</div>
 										<div class="col-sm-10 col-md-11 col-lg-11 r5c">
-											<input type="text" class="form-control" id="r16c1" readonly placeholder="     Легковые Автом. Прочие">
+											<p class="form-control" id="r16c1" >    Легковые Автом. Прочие"</p>
 										</div>
 									</div>
 								</div>
@@ -243,7 +244,7 @@
 											<p class="record">Год выпуска:</p>
 										</div>
 										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r17c1" readonly placeholder="     2006" >
+											<p  class="form-control" id="r17c1">     2006 </p>
 										</div>
 									</div>
 								</div>
@@ -253,7 +254,7 @@
 											<p class="record">Модель двигателя:</p>
 										</div>
 										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r18c1" readonly placeholder="     6D40-299133" >
+											<p class="form-control" id="r18c1">     6D40-299133 </p>
 										</div>
 									</div>
 								</div>
@@ -263,7 +264,7 @@
 											<p class="record">Номер двигателя:</p>
 										</div>
 										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r19c1" readonly placeholder="     6D40-299133">
+											<p class="form-control" id="r19c1">     6D40-299133</p>
 										</div>
 									</div>
 								</div>
@@ -273,7 +274,7 @@
 											<p class="record">Номер шасси (рамы):</p>
 										</div>
 										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r20c1" readonly placeholder="     FU316-213183" >
+											<p  class="form-control" id="r20c1">     FU316-213183</p>
 										</div>
 									</div>
 								</div>
@@ -283,7 +284,7 @@
 											<p class="record">Номер кузова:</p>
 										</div>
 										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r21c1" readonly placeholder="     Отсутствует">
+											<p  class="form-control" id="r21c1">     Отсутствует</p>
 										</div>
 									</div>
 								</div>
@@ -293,7 +294,7 @@
 											<p class="record">Цвет:</p>
 										</div>
 										<div class="col-sm-11 col-md-11 col-lg-11 r5c">
-											<input type="text" class="form-control" id="r22c1" readonly placeholder="     Черный">
+											<p  class="form-control" id="r22c1">    Черный</p>
 										</div>
 									</div>
 								</div>
@@ -303,7 +304,7 @@
 											<p class="record">Мощность двигателя:</p>
 										</div>
 										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r23c1" readonly placeholder="    200 л.с.">
+											<p  class="form-control" id="r23c1">   200 л.с.</p>
 										</div>
 									</div>
 								</div>
@@ -313,7 +314,7 @@
 											<p class="record">Объем двигателя:</p>
 										</div>
 										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
-											<input type="text" class="form-control" id="r24ac1" readonly placeholder="     2000 см³">
+											<p class="form-control" id="r24ac1">     2000 см³</p>
 										</div>
 									</div>
 								</div>
@@ -331,13 +332,13 @@
 												<span class="record">Удостоверение личности: паспорт серии</span>
 											</div>
 											<div class="col-sm-2 col-md-2 col-lg-2 r5c">
-												<input type="text" class="form-control" readonly placeholder="    28 BM № 587123 " id="r24c1">
+												<p class="form-control" id="r24c1">    28 BM № 587123 </p>
 											</div>
 											<div class="col-sm-1 col-md-1 col-lg-1 row5 issued3">
 												<span class="record">выданный,</span>
 											</div>
 											<div class="col-sm-5 col-md-6 col-lg-6 r5c">
-												<input type="text" class="form-control" readonly placeholder=" Казанской таможней, 692273, Приморский край,г. Город," id="r24c1">
+												<p class="form-control" id="r24c1"> Казанской таможней, 692273, Приморский край, г. Город,</p>
 											</div>
 										</div>
 									</div>
@@ -345,7 +346,7 @@
 								<div class="row">
 									<div class="form-group col-sm-12 ">
 										<div class="col-sm-12">
-											<input type="text" class="form-control" id="r25c1" readonly placeholder="  ул. Ленина , дом 2">
+											<p class="form-control" id="r25c1"> ул. Ленина , дом 2 </p>
 										</div>
 									</div>
 								</div>
@@ -394,7 +395,7 @@
 								<div class="row">
 									<div class="form-group col-sm-12 firstRow">
 										<div class="col-sm-12">
-											<span class="record"><input type="text" readonly placeholder="    530 000" class="form-control " id="r33c4"> руб.<input type="text" class="form-control" id="r33c5" readonly placeholder="00" maxlength="4">коп.</span>
+											<span class="record"> <span class="form-control" id="r33c4">   530 000  руб.</span> <span class="form-control" id="r33c5"> 00 </span> коп.</span>
 										</div>
 									</div>
 								</div>
@@ -415,16 +416,24 @@
 								<div class="row signButton">
 										<div class="buttonBox1 col-xs-4 col-sm-3 col-md-3 col-lg-3">
 											<p class="name2">Продавец</p>
-											<button type="button" class="btn seller" data-toggle="modal" data-target="#sellerSign">Добавить подпись</button>
 											<div id="r30c1"></div>
 											<p class="record">(Имя, Фамилия)</p>
+											<button type="button" class="btn seller" data-toggle="modal" data-target="#sellerSign">Добавить подпись</button>
 										</div>
 
 										<div class="buttonBox2 col-xs-offset-1 col-sm-offset-5 col-md-offset-5  col-lg-offset-5 col-xs-4 col-sm-3 col-md-3 col-lg-3">
 											<p class="name2">Покупатель</p>
-											<button type="button" class="btn buyer" data-toggle="modal" data-target="#buyerSign">Добавить подпись</button>
-											<div id="r31c1"></div>
-											<p class="record">(Имя, Фамилия)</p>
+											 <div class="modalName col-sm-6 col-md-6 col-lg-6 col-xs-12 ">
+												   <span type="text" placeholder="Имя"  onfocus="placeholder='';" onblur="placeholder='Имя';">											  
+												</div>
+											  <div class="modalPass col-sm-6  col-md-6 col-lg-6 col-xs-12">
+												   <span type="text" class="form-control" id="modalP" placeholder="Фамилия" onfocus="placeholder='';" onblur="placeholder='Фамилия';">
+											  </div>
+										  	<div class="modalEmail col-sm-12 col-md-12  col-lg-12 col-xs-12">
+												   <span type="text" class="form-control" id="modalE" placeholder="Email"  onfocus="placeholder='';" onblur="placeholder='Email';">
+											  </div>
+											<button type="button" class="btn buyer" data-toggle="modal" data-target="#buyerSign">Отправить на подписание</button>
+											
 										</div>
 								</div>
 								<div id="sellerSign" class="modal fade" role="dialog">
@@ -438,13 +447,13 @@
 								      <div class="modal-body">
 										   <div class="form-group">
 											    <div class="modalName col-sm-4 col-md-4 col-lg-4 col-xs-12 ">
-												   <input type="text" placeholder="Имя"  onfocus="placeholder='';" onblur="placeholder='Имя';">											  
+												   <span type="text" placeholder="Имя"  onfocus="placeholder='';" onblur="placeholder='Имя';">											  
 												</div>
 											  <div class="modalPass col-sm-4  col-md-4 col-lg-4 col-xs-12">
-												   <input type="text" class="form-control" id="modalP" placeholder="Фамилия" onfocus="placeholder='';" onblur="placeholder='Фамилия';">
+												   <span type="text" class="form-control" id="modalP" placeholder="Фамилия" onfocus="placeholder='';" onblur="placeholder='Фамилия';">
 											  </div>
 										  	<div class="modalEmail col-sm-4 col-md-4  col-lg-4 col-xs-12">
-												   <input type="text" class="form-control" id="modalE" placeholder="Email"  onfocus="placeholder='';" onblur="placeholder='Email';">
+												   <span type="text" class="form-control" id="modalE" placeholder="Email"  onfocus="placeholder='';" onblur="placeholder='Email';">
 											  </div>
 											  <div id="modalFile" class="col-sm-12 col-md-12  col-lg-12 col-xs-12">
 											  	<img src="images/signature.png">
@@ -469,13 +478,13 @@
 								      <div class="modal-body">
 										   <div class="form-group">
 											    <div class="modalName col-sm-4 col-md-4 col-lg-4 col-xs-12 ">
-												   <input type="text" placeholder="Имя"  onfocus="placeholder='';" onblur="placeholder='Имя';">											  
+												   <span type="text" placeholder="Имя"  onfocus="placeholder='';" onblur="placeholder='Имя';">											  
 												</div>
 											  <div class="modalPass col-sm-4  col-md-4 col-lg-4 col-xs-12">
-												   <input type="text" class="form-control" id="modalP1" placeholder="Фамилия" onfocus="placeholder='';" onblur="placeholder='Фамилия';">
+												   <span type="text" class="form-control" id="modalP1" placeholder="Фамилия" onfocus="placeholder='';" onblur="placeholder='Фамилия';">
 											  </div>
 										  	<div class="modalEmail col-sm-4 col-md-4  col-lg-4 col-xs-12">
-												   <input type="text" class="form-control" id="modalE1" placeholder="Email"  onfocus="placeholder='';" onblur="placeholder='Email';">
+												   <span type="text" class="form-control" id="modalE1" placeholder="Email"  onfocus="placeholder='';" onblur="placeholder='Email';">
 											  </div>
 											  <div id="modalFile1" class="col-sm-12 col-md-12  col-lg-12 col-xs-12">
 											  	<img src="images/signature.png">
