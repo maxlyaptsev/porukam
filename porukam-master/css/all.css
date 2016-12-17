@@ -182,8 +182,8 @@ body{height:100%!important;background: #f5f5f5!important; min-width: 320px!impor
   border-bottom: 1px solid #d4d4d4!important;}
 #sub-header .col-sm-5{padding:0!important;}
 #sub-header1 .col-sm-5{padding:0!important;}
-.mobile{display: none!important}
-#mob{display: none!important}
+.mobile{display: none}
+#mob{display: none}
 #sub-header .nav a{text-transform: uppercase!important;font-size: 18px!important; background-color: none!importantt;color:#888a8e!important}
 #sub-header li.active a{border-bottom:4px solid #ba8747!important; color:#283143!important;}
 #sub-header .nav li{margin-right:15px!important;}
@@ -347,7 +347,8 @@ text-transform: lowercase!important;
 }
 .back-button{font-size: 30px!important}
 @media only screen and (max-width: 768px){
-   .dropdown-menu{left: -50px !important;}
+  .sign-out{float:right!important;}
+    .dropdown-menu{left: -50px !important;}
 .fDown{height:350px!important;}
 #footer{height: 350px!important}
  .footer-box ul{ padding:30px 0 0 20px!important;display: list-item!important;}
@@ -355,13 +356,13 @@ text-transform: lowercase!important;
 .subtab{padding-top:0px!important;padding-bottom:10px;}
 }
 @media only screen and (max-width: 767px){
-
 .main-box1, .main-box2, .main-box3, .main-box4, .main-box5, .main-box6, .main-box7, .main-box8, .main-box9{ margin-bottom:0!important;}
 .main-box a{
    padding: 30px 10px 0 10px!important;
    height:90%!important;
     padding-top:10px!important;
   }
+
   .main-box .hollow{margin-right:0!important;} 
   .main-box .hollow{margin-right:0!important;}
   .dropdown-menu{left: -50px !important;}
@@ -376,9 +377,7 @@ font-size: 18px!important;
   background: #fff!important;
 z-index: 50!important;
  }
-
- 
- #mob a{font-size: 25px!important;
+  #mob a{font-size: 25px!important;
     line-height: 30px!important;
     padding: 6px 0!important;
     margin-bottom: 25px!important;
@@ -399,8 +398,10 @@ z-index: 50!important;
 .tab-box{padding-bottom:10px!important;}
 .account{display:flex!important; align-items:flex-start!important; padding-top:3%!important;}
 }
-@media only screen and (max-width: 375px){.tab-pane li{margin-right:5%!important;}.dropdown-menu{top: 60% !important;}}
-
+@media only screen and (max-width: 375px){.tab-pane li{margin-right:5%!important;}.dropdown-menu{top: 60% !important;}
+#header-top .sign-out .btn-primary{font-size: 14px!important;padding:10px 5px 10px 5px !important; }}
+@media only screen and (max-width: 767px){
+#header-top .sign-out .btn-primary{float:right!important;}}
 .main-box .h2{
   font-family:'Cuprum-Bold'!important; 
   font-size:30px!important; color:#282828!important; 
@@ -1071,8 +1072,8 @@ box-shadow: none!important;
   margin:50px 0!important;
 }
 .ProgBox{float:none!important; margin:0 auto!important;text-align: center!important;}
-.buttonBox1{width:400px;margin: auto!important;}
-.buttonBox1:after {
+.buttonBox3{width:400px;margin: auto!important;}
+.buttonBox3:after {
     content: '';
     display: block;
     clear: both;
@@ -1089,8 +1090,8 @@ box-shadow: none!important;
 
 @media only screen and (max-width:767px){
     .mainTitle { font-size:24px!important;}
-    .buttonBox1{width:325px!important;}
-    .buttonBox1 button{width:142px!important;}
+    .buttonBox3{width:325px!important;}
+    .buttonBox3 button{width:142px!important;}
     .buttonBox button{width:140px!important;}
     .fullV{margin-left:50px!important;}
 }
@@ -1162,7 +1163,7 @@ box-shadow: none!important;
 #r21c1, #r22c1,  #r23c1,  #r24c1,  #r25c1,  #r26c1{width:100%!important;}
 #r27c1, #r28c1, #r29c1,  #r30c1, #r24ac1{width:100%!important;}
  #r30c1{margin-top:30px;}
-.buttonBox1 .record{margin-bottom:30px!important;}
+.buttonBox1 .record{margin-bottom:40px!important;margin-top:10px!important;}
 #r5c1{width:100%!important;}
 .r5c{padding-left:0!important;}
 .row5{padding-right:0!important;}
@@ -1213,10 +1214,13 @@ width:217px!important;}
 @media (min-width: 768px){
 .modal-dialog {
     width: 770px!important;
-    margin: 30px auto;
+    margin: 30px auto;}
 }
-}
-.modalName{margin-bottom:25px;}
+.buttonBox2 input{height:35px!important; border:1px solid #f5f5f5!important;}
+#modalE, #modalP,  #modalN{height:35px!important; border:1px solid #f5f5f5!important;width: 100%!important}
+.modalName{padding:0 10px 0 0!important;}
+.modalPass{padding:0 0 0 10px!important;}
+.modalEmail{padding:0!important;}
 .reset{width:160px!important;margin:30px 0;font-family: 'Cuprum-Bold';}
 .submitSign{
   width:160px!important;
@@ -1388,6 +1392,9 @@ fieldset[disabled] .form-control{background-color: #fff!important}
       width: 120px !important;}
 }
 .main-introbox{width: 700px!important;margin: auto!important; margin-top: 50px!important;float:none!important;}
+@media only screen and (max-width: 767px){.main-introbox{width: 400px!important;}}
+@media only screen and (max-width: 470px){.main-introbox{width: 300px!important;font-size:14px!important;}}
+
 .main-intro{ 
   font-size: 18px!important;
   font-family: 'Roboto-BoldCondensed';
@@ -1422,6 +1429,8 @@ content: counter(list) " "!important;
     height: 531px!important;}
     .about-author{width:600px!important;
       float:left;}
+   @media only screen and (max-width: 767px){.about-author{width:350px!important;}}
+   
       .author-name{font-family:'Cuprum-Bold'!important; 
   font-size:18px!important; 
   color:#282828!important; 
@@ -1442,3 +1451,22 @@ margin-bottom:0!important;}
   text-transform: uppercase!important;}
 .contact-box{text-align: center!important}
 .contact-box i{color:#ba8747!important;padding-bottom: 20px!important}
+@media only screen and (max-width: 600px){
+  #r5c1{line-height: 20px!important;
+    margin-bottom: 20px!important;}
+  #r7c1{line-height: 20px!important;
+    margin-bottom: 40px!important;}
+  #r11c1{line-height: 20px!important;
+    margin-bottom: 20px!important;}
+  #r13c1{line-height: 20px!important;
+    margin-bottom: 20px!important;}
+  #r24c1{line-height: 20px!important;
+    margin-bottom: 20px!important;}
+    #r33c4{width: 150px;display: inline-block}
+    #r33c5{width: 50px;display: inline-block}
+  #r12c1, #r12c2, #r12c3, #r6c5{display: inline-block;}
+  .name2 {font-size: 14px!important;}
+.buttonBox1 .record{font-size: 14px!important;}
+.buttonBox1 button, .buttonBox2 button{font-size: 12px!important;}
+.buttonBox1{margin-left:0!important;}
+}
