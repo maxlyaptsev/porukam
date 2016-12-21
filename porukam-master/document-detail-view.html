@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Porukam</title>
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<link media="all" rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="css/smoothness/jquery-ui-1.9.2.custom.css">
+	<link media="all" rel="stylesheet" href="css/smoothness/jquery-ui-1.9.2.custom.min.css">
+	<link media="all" rel="stylesheet" href="css/select2.css">
+	<link media="all" rel="stylesheet" href="css/select2-bootstrap.css">
+	<link media="all" rel="stylesheet" href="css/jquery.fancybox.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div id="header-top">
+			<div class="row content1">
+				<div class="mobile col-xs-1">
+					<i id="open" class="fa fa-th-list fa-2x" aria-hidden="true"></i>
+				</div>	
+				<div id="mob">
+					<i  id="close" class="fa fa-times-circle fa-1x" aria-hidden="true"></i>
+					<ul class="list-unstyled text-uppercase">
+						<li class="active"><a href="#">главная</a></li>
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">блог</a></li>	
+						<li><a href="#">цены</a></li>	
+					</ul>
+				</div>
+				<div class="logo col-xs-6 col-sm-3 col-md-2 text-uppercase"><a href="#">Porukam</a></div>
+				<nav id="nav" class="col-md-offset-1 col-lg-offset-2 col-sm-7  col-md-8">
+					<ul class="list-unstyled list-inline text-uppercase">
+						<li class="active"><a href="#">главная</a></li>
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">блог</a></li>	
+						<li><a href="#">цены</a></li>	
+					</ul>
+				</nav>
+				<div class="col-md-offset-1  sign-out  col-lg-2 col-xs-6  col-md-2 col-sm-2">
+					<button type="button" class="btn btn-primary btn-lg"><i class="fa fa-unlock-alt fa-1x" aria-hidden="true"></i>выйти</button>
+				</div>
+			</div>           
+		</div>
+		<div class="content">
+			<div class="row">
+				<div id="sub-header1">
+					<div class="col-xs-6 col-sm-5 col-md-8 col-lg-8 navBox">
+					  <ul class="nav nav-tabs" role="tablist">
+					    <li class="active"><a href="#create" aria-controls="create" role="tab" data-toggle="tab">Создание</a></li>
+					    <li><a href="#preview" aria-controls="preview" role="tab" data-toggle="tab">Предварительный просмотр</a></li>
+					    <li><a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">Редактирование</a></li>
+					  </ul>
+				 	</div>
+					<div class="account dropdown col-xs-offset-1  col-xs-5 col-sm-3  col-md-2 col-lg-2">
+						 <a class="dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa fa-user fa-1x" aria-hidden="true"></i> Станислав <i class="fa fa-angle-down" aria-hidden="true"></i>
+						</a>
+						<ul class="dropdown-menu">
+							 <li><a href="#">Тариф: <span class="plan">Стандартный</span></a></li>
+							 <li><a href="#">Настройки</a></li>
+						 </ul>
+					</div>
+					<div class="col-sm-3 col-md-2 improve col-lg-2">
+						<a href="#">Улучшить аккаунт</a>
+					</div>
+				</div>
+			</div>
+				<div class="row col-xs-12  breadcrumbs">
+					<ul class="breadcrumbs-table list-unstyled list-inline">
+											<button type="button" class="btn btn-primary back-button"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 width="18px" height="18px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+						<g>
+							<g>
+								<path d="M199.997,0C89.72,0,0,89.72,0,200s89.72,200,199.997,200C310.279,400,400,310.28,400,200S310.279,0,199.997,0z
+									 M199.997,373.77c-95.811,0-173.766-77.953-173.766-173.77c0-95.817,77.955-173.77,173.766-173.77
+									c95.824,0,173.772,77.953,173.772,173.77C373.77,295.816,295.82,373.77,199.997,373.77z"/>
+								<path d="M241.559,109.851c-5.123-5.124-13.43-5.124-18.547,0l-80.875,80.873c-2.46,2.459-3.843,5.796-3.843,9.273
+									c0,3.478,1.383,6.813,3.843,9.272l80.875,80.875c2.562,2.562,5.918,3.844,9.273,3.844c3.354,0,6.719-1.281,9.272-3.844
+									c5.123-5.119,5.123-13.426,0-18.545l-71.597-71.604l71.597-71.6C246.682,123.277,246.682,114.971,241.559,109.851z"/>
+							</g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						<g>
+						</g>
+						</svg></button> 
+					<li><a href="#" a href="#home" aria-controls="home" >Главная </a></li>
+					<li><a href="#" aria-controls="">Категория</a></li>
+					<li class="active">Подкатегория</li>	
+				</ul>
+			</div>
+			<div class="main-tab">
+				<div class="row tab-box">
+				  <div class="tab-content col-xs-12">
+				    <div role="tabpanel" class="tab-pane active" id="create">
+					   	 <form class="form-inline formSheet">		
+							<div class="row">
+								<div class="h2 col-xs-12">Договор купли-продажи транспортного средства
+								</div>
+							</div>
+								<div class="row">
+									<div class="form-group col-sm-12 firstRow">
+										<div class="col-xs-7 col-sm-6 col-md-4 col-lg-3">
+											<span class="record form-control" id="r1c1">&#171; 28 &#187;</span>
+											<span class="form-control " id="r1c2">марта</span>
+											<span class="record form-control" id="r1c3">2016 года</span>
+										  </div>
+										  <div class=" col-xs-3 col-sm-offset-1  col-md-offset-6  col-lg-offset-7 col-sm-4 col-md-2 col-lg-2 r2c">
+											<span id="r1c4" class=" form-control">г. Москва</span>
+										  </div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 ">
+										<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 r2c">
+											<p class="record">(дата)</p>
+										</div>
+										  <div class="col-xs-6 col-sm-offset-5  col-md-offset-7 col-lg-offset-7 col-sm-4 col-md-3 col-lg-3 ">
+											<p class="record" id="r2c2">(место составления)</p>
+										  </div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 ">
+										<div class="col-sm-12">
+											<p class="form-control" id="r3c1">Иванов Иван Иванович</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 ">
+										<div class="col-sm-12">
+											<p class="form-control" id="r4c1"></p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-4 col-md-3 col-lg-3 row5">
+											<p class="record">зарегистрированный (ая) по адресу</p>
+										</div>
+										<div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 r5c">
+											<p class="form-control" id="r5c1"> РФ, г. Москва, ул. Туполева, дом 2, квартира 7</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 firstRow">
+										<div class="col-sm-12">
+											<span class="record">	Удостоверение личности: паспорт серии <span class="form-control"> 5734 </span> № <span class="form-control"> 931043 </span> выдан <span class="form-control"> &#8220; 26 &#8221; марта 2014 г., </span></span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 ">
+										<div class="col-sm-12">
+											<span class="form-control" id="r7c1"> Выдан отделом УФМС Росссии по Московской области в Пресненском районе" </span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 firstRow">
+										<div class="col-sm-6 col-md-4 col-lg-4 ">
+											<span class="record">именуемый(ая) в дальнейшем "Продавец", и</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 ">
+										<div class="col-sm-12">
+											<p class="form-control" id="r9c1">   Петров Петр Петрович</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12">
+										<div class="col-sm-12">
+											<p class="form-control" readonly id="r10c1"></p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-4 col-md-3 col-lg-3 row5">
+											<span class="record">	зарегистрированный (ая) по адресу</span>
+										</div>
+										<div class="col-sm-8 col-md-9 col-lg-9 r5c">
+											<p class="form-control" id="r11c1"> РФ, Брянская обл., г. Гродно, ул. Лавочкина, дом 7, квартира 157 </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 firstRow">
+										<div class="col-sm-12">
+											<span class="record">	Удостоверение личности: паспорт серии <span class="form-control" id="r12c1"> 7738 </span> № <span class="form-control" id="r12c2">232123</span>, выдан <span class="form-control" id="r12c3">  &#8220; 25 &#8221; июня </span><span  class="form-control" id="r6c5">2010 г.,</span></span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 ">
+										<div class="col-sm-12">
+											<p class="form-control" id="r13c1">  Выдан отделом УФМС Росссии по Калужской области в городе Мещовск </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-6 col-md-4 col-lg-4 ">
+											<p class="record">именуемый(ая) в дальнейшем "Покупатель", </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-10 col-md-6 col-lg-6 ">
+											<p class="record">заключили настоящий Договор о нижеследующем: </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-10 col-lg-10 ">
+											<p class="record">1. Продавец передает в собственность Покупателя, а Покупатель принимает и оплачивает транспортное средство:</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-4 col-md-2 col-lg-2 row5">
+											<p class="record">Марка, модель ТС:</p>
+										</div>
+										<div class="col-sm-8 col-md-10 col-lg-10 r5c">
+											<p class="form-control" id="r14c1">     BMW 320i </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-4 col-md-3 col-lg-3 row5">
+											<p class="record">Идентификационный номер (VIN):</p>
+										</div>
+										<div class="col-sm-8 col-md-9 col-lg-9 r5c">
+											<p class="form-control" id="r15c1">   WAUZZZ8DZWA123456 </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-2 col-md-1 col-lg-1 row5">
+											<p class="record">Тип ТС:</p>
+										</div>
+										<div class="col-sm-10 col-md-11 col-lg-11 r5c">
+											<p class="form-control" id="r16c1" >    Легковые Автом. Прочие"</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-3 col-md-2 col-lg-2 row5">
+											<p class="record">Год выпуска:</p>
+										</div>
+										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
+											<p  class="form-control" id="r17c1">     2006 </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-3 col-md-2 col-lg-2 row5">
+											<p class="record">Модель двигателя:</p>
+										</div>
+										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
+											<p class="form-control" id="r18c1">     6D40-299133 </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-3 col-md-2 col-lg-2 row5">
+											<p class="record">Номер двигателя:</p>
+										</div>
+										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
+											<p class="form-control" id="r19c1">     6D40-299133</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-3 col-md-2 col-lg-2  row5">
+											<p class="record">Номер шасси (рамы):</p>
+										</div>
+										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
+											<p  class="form-control" id="r20c1">     FU316-213183</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-3 col-md-2 col-lg-2 row5">
+											<p class="record">Номер кузова:</p>
+										</div>
+										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
+											<p  class="form-control" id="r21c1">     Отсутствует</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-1 col-md-1 col-lg-1 row5">
+											<p class="record">Цвет:</p>
+										</div>
+										<div class="col-sm-11 col-md-11 col-lg-11 r5c">
+											<p  class="form-control" id="r22c1">    Черный</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-3 col-md-2 col-lg-2  row5">
+											<p class="record">Мощность двигателя:</p>
+										</div>
+										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
+											<p  class="form-control" id="r23c1">   200 л.с.</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12">
+										<div class="col-sm-3 col-md-2 col-lg-2  row5">
+											<p class="record">Объем двигателя:</p>
+										</div>
+										<div class="col-sm-9 col-md-10 col-lg-10 r5c">
+											<p class="form-control" id="r24ac1">     2000 см³</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">2. Указанное в п. 1 транспортное средство, принадлежит Продавцу на праве собственности, что подтверждает  паспорт транспортного средства, </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-xs-12 firstRow">
+										<div class="form-group col-sm-12  col-md-12 col-lg-12">
+											<div class="col-sm-4 col-md-3 col-lg-3 row5">
+												<span class="record">Удостоверение личности: паспорт серии</span>
+											</div>
+											<div class="col-sm-2 col-md-2 col-lg-2 r5c">
+												<p class="form-control" id="r24c1">    28 BM № 587123 </p>
+											</div>
+											<div class="col-sm-1 col-md-1 col-lg-1 row5 issued3">
+												<span class="record">выданный,</span>
+											</div>
+											<div class="col-sm-5 col-md-6 col-lg-6 r5c">
+												<p class="form-control" id="r24c1"> Казанской таможней, 692273, Приморский край, г. Город,</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 ">
+										<div class="col-sm-12">
+											<p class="form-control" id="r25c1"> ул. Ленина , дом 2 </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 firstRow">
+										<div class="col-sm-12">
+											<span id="r27c4" class="record">&#171; 28 &#187; мая 2015г.</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">3. Со слов Продавца на момент заключения настоящего Договора отчуждаемое транспортное средство никому не продано, не заложено, в споре и под </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">запрещением (арестом) не состоит, а также не является предметом претензий третьих лиц. </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">4. В случае нарушения условий, указанных в пункте 3 настоящего договора, Продавец обязуется незамедлительно возвратить Покупателю стоимость</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">транспортного средства в полном объеме со дня обнаружения соответствующего нарушения. </p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">5. Покупатель в оплату за приобретенное транспортное средство передал Продавцу, а Продавец получил денежные средства в размере</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12 firstRow">
+										<div class="col-sm-12">
+											<span class="record"> <span class="form-control" id="r33c4">   530 000  руб.</span> <span class="form-control" id="r33c5"> 00 </span> коп.</span>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">6. Право собственности на транспортное средство, указанное в п. 1 договора переходит к Покупателю с момента подписания настоящего договора.</p>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-sm-12  col-md-12 col-lg-12 rowp">
+										<div class="col-sm-12 col-md-12 col-lg-12 ">
+											<p class="record">7. Настоящий договор составлен в трех экземплярах, имеющих одинаковую юридическую силу. </p>
+										</div>
+									</div>
+								</div>
+						</form>
+						<!-- конец формы  -->
+	
+					    
+<!-- блоки для подписи  -->			    
+<div class="row signButton">
+	
+<!--  блок первой стороны -->
+<!-- 	<div id="signature_pjax" data-pjax-container="" data-pjax-push-state data-pjax-timeout="1000">     -->
+		<div class="buttonBox1 col-xs-4 col-sm-3 col-md-3 col-lg-3">
+			<p class="name2">Продавец</p>
+			<div class="signature">
+			    <img src="data:image/png;base64,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" style="width: 100%;">
+			</div>
+<!-- 	Кнопки может не быть если документ уже подписан второй стороной. -->
+			<button type="button" class="btn seller"  data-target="#sellerSign">Изменить подпись</button>
+		</div>
+<!-- 	</div> -->
+	
+	
+<!--  блок второй стороны	 -->
+	<div class="buttonBox2 col-sm-offset-5 col-md-offset-5  col-lg-offset-5 col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+		<div id="send_request_result" data-pjax-container="" data-pjax-push-state data-pjax-timeout="1000">		
+			<form id="form_send_request" action="/profile/my-documents/update/?id=13" method="post">
+				<input type="hidden" name="_csrf" value="aXF6cmxVbzMvQkICOzEbbC4JLCQ9NiRmACctKzMTCXIvBjIKJwdYYA==">		
+				<p class="name2">Покупатель</p>
+
+				<div class="modalName col-sm-6 col-md-6 col-lg-6 col-xs-12 ">
+					<input type="text" id="modalN" class="form-control" placeholder="Имя" onfocus="placeholder='';" onblur="placeholder='Имя';">
+				</div>
+				<div class="modalPass col-sm-6  col-md-6 col-lg-6 col-xs-12">
+					<input type="text" class="form-control" id="modalP" placeholder="Фамилия" onfocus="placeholder='';" onblur="placeholder='Фамилия';">
+				</div>
+				<div class="modalEmail col-sm-12 col-md-12  col-lg-12 col-xs-12">
+					<input type="text" class="form-control" id="modalE" placeholder="Email" onfocus="placeholder='';" onblur="placeholder='Email';">
+				</div>
+				<button type="button" class="btn buyer" data-toggle="modal" data-target="#buyerSign">Отправить на подписание</button>
+			</form>		
+		</div>
+	</div>
+<!-- после заполнения формы блок принимает другой вид - текст что запрос отправлен + кнопка отменить запрос. Верстка этого варианта тоже нужна -->
+<!-- 	можно рядом закоменченый отсавить		     -->
+</div> 
+
+<!--Окно с формой для подписи-->
+<div id="signature_window" class="" style="display: none;">
+    <!-- Modal content-->
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Добавить подпись</h4>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-group">
+            <div class="modalName col-sm-4 col-md-4 col-lg-4 col-xs-12 ">
+                <input type="text" placeholder="Имя"  onfocus="placeholder='';" onblur="placeholder='Имя';">
+            </div>
+            <div class="modalPass col-sm-4  col-md-4 col-lg-4 col-xs-12">
+                <input type="text" class="form-control" id="modalP" placeholder="Фамилия" onfocus="placeholder='';" onblur="placeholder='Фамилия';">
+            </div>
+            <div class="modalEmail col-sm-4 col-md-4  col-lg-4 col-xs-12">
+                <input type="text" class="form-control" id="modalE" placeholder="Email"  onfocus="placeholder='';" onblur="placeholder='Email';">
+            </div>
+            <div class="modalFile col-sm-12 col-md-12  col-lg-12 col-xs-12">
+
+                <div id="signature-pad" class="m-signature-pad" style="width: 700px; height: 415px;">
+                    <div class="m-signature-pad--body">
+                        <canvas></canvas>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modalButtons col-sm-12 col-md-12  col-lg-12 col-xs-12">
+                <button type="button" class="btn btn-primary reset btn-lg col-sm-3 col-md-3  col-lg-3 col-xs-3">Очистить</button>
+                <button type="button" data-action="save" class="btn btn-primary submitSign col-xs-offset-6 col-sm-offset-6 col-md-offset-6 col-lg-offset-6 col-md-offset-6 btn-lg col-sm-3 col-md-3  col-lg-3 col-xs-3">Подписать</button>
+            </div>
+        </div>
+    </div>
+</div>
+	
+<!-- Открываем окно fancybox. Именно через клик т.к. тут будут выполняться и другие дейтсвия в after show -->
+<script>
+	$(document).on('click', '.btn.seller', function () {
+        	$.fancybox.open('#signature_window');
+	});
+</script>
+
+					    
+					    
+					    
+					</div>
+					<div role="tabpanel" class="tab-pane" id="preview"></div>
+					<div role="tabpanel" class="tab-pane" id="edit"></div>
+				 </div>
+			   </div>
+			</div>
+			<div class="fDown"></div>
+		</div>
+		<div id="footer">
+			<div class="row">
+				<div class="footer-box">
+					<ul class="col-md-12  list-unstyled list-inline text-uppercase">
+							<li><a href="#">Поддержка</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Работа</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+ 	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/jquery-ui-1.9.2.custom.js" type="text/javascript"></script> 
+	<script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script> 
+	<script src="js/jquery-control.js"></script>
+	<script src="js/select2.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+    <script>
+$(function(){
+  var hash = window.location.hash;
+  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+  $('.nav-tabs a').click(function (e) {
+    $(this).tab('show');
+    var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+    window.location.hash = this.hash;
+    $('html,body').scrollTop(scrollmem);
+  });
+});
+
+</script>
+<script>
+$(document).ready(function()
+{
+    $('#submitSign1').click(function()
+    {
+        // get Image URL
+        var imageUrl = $('#modalFile').find('img').attr('src');
+
+        // load big image
+        $('#r30c1').html('<img src="'+ imageUrl+'" width="200"/>');
+    });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+    $('#submitSign2').click(function()
+    {
+        // get Image URL
+        var imageUrl = $('#modalFile1').find('img').attr('src');
+
+        // load big image
+        $('#r31c1').html('<img src="'+ imageUrl+'" width="200"/>');
+    });
+});
+</script>
+</body>
+</html>
